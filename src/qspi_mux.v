@@ -95,7 +95,7 @@ end
 // This block continously checks to see if the currently granted request
 // is no longer valid, and if that's true, checks for pending request
 //
-// request[0] is never valid, so on any clock cycle where "granted == 0)" we
+// request[0] is never valid, so on any clock cycle where "granted == 0" we
 // will always check for a pending request
 //============================================================================
 always @(posedge clk) begin
