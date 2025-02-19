@@ -1,6 +1,6 @@
 
 //=============================================================================
-// This multiplexes multile inputs to a single output.  Only one input at a 
+// This multiplexes multiple inputs to a single output.  Only one input at a 
 // time will be connected to the output.
 // 
 // The algorithm for using this is:
