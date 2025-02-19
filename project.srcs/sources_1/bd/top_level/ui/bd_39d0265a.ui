@@ -1,0 +1,51 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-554,-570",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port UART -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD -left
+preplace port port-id_CLK100MHZ -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
+preplace port port-id_CPU_RESETN -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace inst source_100mhz -pg 1 -lvl 1 -x 140 -y 190 -defaultsOSRD -pinDir clk_in left -pinY clk_in 0L -pinDir resetn_in left -pinY resetn_in 20L -pinDir sys_clk right -pinY sys_clk 0R -pinBusDir sys_resetn right -pinBusY sys_resetn 20R
+preplace inst uart_axi_bridge -pg 1 -lvl 2 -x 400 -y 130 -defaultsOSRD -pinDir UART left -pinY UART 0L -pinDir M_AXI right -pinY M_AXI 0R -pinDir s_axi_aclk left -pinY s_axi_aclk 20L -pinDir s_axi_aresetn left -pinY s_axi_aresetn 40L
+preplace inst system_interconnect -pg 1 -lvl 3 -x 680 -y 60 -defaultsOSRD -pinDir S00_AXI left -pinY S00_AXI 70L -pinDir M00_AXI right -pinY M00_AXI 0R -pinDir M01_AXI right -pinY M01_AXI 180R -pinDir aclk left -pinY aclk 160L -pinDir aresetn left -pinY aresetn 180L
+preplace inst axi_revision -pg 1 -lvl 4 -x 970 -y 60 -defaultsOSRD -pinDir S_AXI left -pinY S_AXI 0L -pinDir AXI_ACLK left -pinY AXI_ACLK 20L -pinDir AXI_ARESETN left -pinY AXI_ARESETN 40L
+preplace inst system_ila -pg 1 -lvl 6 -x 1610 -y 60 -defaultsOSRD -pinDir clk left -pinY clk 0L -pinBusDir probe0 left -pinBusY probe0 20L -pinBusDir probe1 left -pinBusY probe1 40L -pinBusDir probe2 left -pinBusY probe2 120L -pinBusDir probe3 left -pinBusY probe3 140L -pinBusDir probe4 left -pinBusY probe4 160L
+preplace inst mux_tester -pg 1 -lvl 4 -x 970 -y 240 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 24 25 22 23} -defaultsOSRD -pinDir S_AXI left -pinY S_AXI 0L -pinDir clk left -pinY clk 20L -pinDir resetn left -pinY resetn 60L -pinBusDir value_1 right -pinBusY value_1 40R -pinBusDir value_2 right -pinBusY value_2 60R -pinDir request_1 right -pinY request_1 0R -pinDir request_2 right -pinY request_2 20R
+preplace inst qspi_mux -pg 1 -lvl 5 -x 1330 -y 160 -defaultsOSRD -pinDir clk left -pinY clk 0L -pinDir resetn left -pinY resetn 20L -pinDir request_1 left -pinY request_1 80L -pinDir request_2 left -pinY request_2 100L -pinDir grant_1 right -pinY grant_1 20R -pinDir grant_2 right -pinY grant_2 40R -pinBusDir mux_in1 left -pinBusY mux_in1 120L -pinBusDir mux_in2 left -pinBusY mux_in2 140L -pinBusDir mux_out right -pinBusY mux_out 60R
+preplace netloc clk_in1_0_1 1 0 1 NJ 190
+preplace netloc ext_reset_in_0_1 1 0 1 NJ 210
+preplace netloc mux_tester_0_request_1 1 4 2 1120 80 N
+preplace netloc mux_tester_0_request_2 1 4 2 1140 100 N
+preplace netloc mux_tester_0_value_1 1 4 1 N 280
+preplace netloc mux_tester_0_value_2 1 4 1 N 300
+preplace netloc qspi_mux_grant_1 1 5 1 N 180
+preplace netloc qspi_mux_grant_2 1 5 1 N 200
+preplace netloc qspi_mux_mux_out 1 5 1 N 220
+preplace netloc source_100mhz_sys_clk 1 1 5 280 220 540 300 820 160 1100 60 NJ
+preplace netloc source_100mhz_sys_resetn 1 1 4 260 240 520 320 840 180 N
+preplace netloc axi_uartlite_UART 1 0 2 NJ 130 NJ
+preplace netloc system_interconnect_M00_AXI 1 3 1 N 60
+preplace netloc system_interconnect_M01_AXI 1 3 1 N 240
+preplace netloc uart_axi_bridge_M_AXI 1 2 1 N 130
+levelinfo -pg 1 0 140 400 680 970 1330 1610 1700
+pagesize -pg 1 -db -bbox -sgen -150 0 1700 360
+",
+   "No Loops_ScaleFactor":"0.850163",
+   "No Loops_TopLeft":"-142,-260",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_CLK100MHZ -pg 1 -lvl 0 -x -10 -y -200 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 120 -y -200 -defaultsOSRD
+preplace netloc clk_in1_0_1 1 0 1 N -200
+levelinfo -pg 1 -10 120 240
+pagesize -pg 1 -db -bbox -sgen -150 -270 240 140
+"
+}
+{
+   "da_axi4_cnt":"2"
+}
