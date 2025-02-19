@@ -58,7 +58,7 @@ assign grant_2 = assert_grant[2] & request_2;
 
 
 //=============================================================================
-// This block drives "mux" out depending on the state of the "granted" register
+// This block drives "mux_out" depending on the state of the "granted" register
 //=============================================================================
 always @* begin
 
